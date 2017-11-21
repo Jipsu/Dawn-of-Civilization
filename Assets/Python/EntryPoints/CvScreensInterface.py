@@ -54,10 +54,11 @@ g_bIsScreenActive = -1
 from StoredData import data
 from Consts import *
 import Areas
-from RFCUtils import utils
+import RFCUtils
 import Victory as vic
 import CityNameManager as cnm
 import Congresses as cong
+utils = RFCUtils.RFCUtils()
 gc = CyGlobalContext()
 
 def getStabilityLevel(argsList):
