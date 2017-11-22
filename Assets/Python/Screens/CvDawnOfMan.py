@@ -5,7 +5,8 @@ import math #Rhye
 from Consts import *
 import CvUtil
 from CvPythonExtensions import *
-from RFCUtils import utils
+import RFCUtils # edead
+utils = RFCUtils.RFCUtils() # edead
 
 ArtFileMgr = CyArtFileMgr()
 localText = CyTranslator()

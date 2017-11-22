@@ -13,7 +13,7 @@ import string
 import math
 
 from Consts import *
-from RFCUtils import utils
+import RFCUtils
 from PyHelpers import PyPlayer
 from operator import itemgetter
 
@@ -30,6 +30,7 @@ ScoreOpt = BugCore.game.Scores
 
 # globals
 gc = CyGlobalContext()
+utils = RFCUtils.RFCUtils()
 ArtFileMgr = CyArtFileMgr()
 localText = CyTranslator()
 

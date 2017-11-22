@@ -1584,7 +1584,7 @@ class CvWorldBuilderScreen:
 		screen.setState("WarMapButton", self.iPlayerAddMode == "WarMap")
 		screen.setState("ReligionMapButton", self.iPlayerAddMode == "ReligionMap")
 		screen.setState("RegionMapButton", self.iPlayerAddMode == "RegionMap")
-		screen.setState("MoveMapScreen", self.iPlayerAddMode in ["MoveMap", "MoveMap2"])
+		screen.setState("MoveMapScreen", self.iPlayerAddMode == "MoveMap")
 
 	def setSelectionTable(self):
 		screen = CyGInterfaceScreen( "WorldBuilderScreen", CvScreenEnums.WORLDBUILDER_SCREEN)

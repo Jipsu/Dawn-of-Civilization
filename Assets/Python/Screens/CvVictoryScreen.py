@@ -6,7 +6,8 @@ import ScreenInput
 import PyHelpers
 import time
 from Consts import * #Rhye
-from RFCUtils import utils
+import cPickle as pickle #Rhye
+import RFCUtils #Rhye
 import Victory as vic
 from StoredData import data
 
@@ -46,6 +47,7 @@ PyPlayer = PyHelpers.PyPlayer
 
 # globals
 
+utils = RFCUtils.RFCUtils() #Rhye
 gc = CyGlobalContext()
 ArtFileMgr = CyArtFileMgr()
 localText = CyTranslator()
